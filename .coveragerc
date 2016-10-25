@@ -1,0 +1,5 @@
+# pytest-cov
+
+[run]
+source=src
+branch=True

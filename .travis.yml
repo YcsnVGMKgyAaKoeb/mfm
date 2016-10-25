@@ -1,0 +1,19 @@
+# http://travis-ci.org
+# run test on every git push
+
+
+
+language=python
+
+matrix:
+    include:
+        - python: "3.5"
+          env: TOXENV=mfm
+
+sudo: false
+
+install:
+    - pip install tox
+
+script:
+    tox
